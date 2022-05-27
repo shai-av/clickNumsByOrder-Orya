@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>touch-nums</title>
+</head>
+
+<body onload="init()">
+    <div class="main">
+        <div>
+            <div class="clock"></div>
+            <div class="cell next-cell"></div>
+        </div>
+        <div class="board">
+            <table>
+                <tbody class="board">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons">
+            <div>
+                <br>
+                <div class="options">
+                    <span class="option"><input name="cells-in-row" onclick="selectedDifficulty(this.value)"
+                            type="radio" value="3" checked> 3 X 3 ||</span>
+                    <span class="option"><input name="cells-in-row" onclick="selectedDifficulty(this.value)"
+                            type="radio" value="4"> 4 X 4 ||</span>
+                    <span class="option"><input name="cells-in-row" onclick="selectedDifficulty(this.value)"
+                            type="radio" value="5"> 5 X 5 ||</span>
+                    <span class="option"><input name="cells-in-row" onclick="selectedDifficulty(this.value)"
+                            type="radio" value="6"> 6 X 6</span>
+
+                </div>
+            </div>
+            <button class="btn" onclick="newGame()">New Game</button>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

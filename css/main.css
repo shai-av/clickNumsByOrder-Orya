@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+    background-color: #D486FF;
+}
+
+.clock {
+    display:inline-block;
+    margin: auto;
+    height: 60px;
+    width: 190px;
+    background-color: #FD07FE;
+    border-radius: 10%;
+    color: white;
+    border: 1px solid whitesmoke;
+    padding-left: 50px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.board {
+    margin: auto;
+    margin-top: 10px;
+    background-color: #F583FF;
+    height: fit-content;
+    width: fit-content;
+    border: 5px solid #FC08FE;
+    border-radius: 10%;
+    padding: 20px;
+    transition: 1s;
+}
+
+.cell {
+    border: 10px solid #D741D8;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #EA36ED;
+    background-color: #EEAFE6;
+    height: 50px;
+    width: 50px;
+    border-radius: 35%;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cell:hover {
+    border-color: #D600FF;
+}
+
+.next-cell {
+    display: inline-block;
+    border-color: #D600FF;
+    height: 30px;
+    width: 30px;
+}
+
+.clickedCell {
+    transform: rotate(90deg);
+    background-color: rgb(245 4 131 / 33%);
+    color:whitesmoke;
+}
+
+.completedBoard {
+    transform: rotate(-90deg);
+    background-color: rgb(235, 90, 90);
+}
+
+.buttons .btn {
+    margin-top: 10px;
+    height: 50px;
+    background-color: #FD07FE;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+.options {
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+    background-color: #FD07FE;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10%;
+    font-size: 30px;
+}
